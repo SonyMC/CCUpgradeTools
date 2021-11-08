@@ -1,0 +1,6 @@
+class: com.guidewire.upgrade.steps.granite.pl.RenameFilesDifferCaseSensitivityUpgradeStep
+description: >
+    Find files with the same name but written in
+    a different case and change the name in the base
+    and customized configurations to be exactly the
+    same as the name in the new base configuration.

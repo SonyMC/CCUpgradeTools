@@ -1,0 +1,35 @@
+# SETTINGS FOR THE INSURANCESUITE UPGRADE TOOLS
+
+# Formatting rules:
+# - Do not use quotes for paths, even if the paths include spaces.
+# - Guidewire recommends that you use forward slashes as path separators on all platforms.
+# If you prefer to use Windows-style paths with backslashes as separators, the backslashes must be escaped.
+# For example, both of the following paths are valid:
+# C:/Tools/Apache/ant/apache-ant-1.7.1
+# C:\\Tools\\Apache\\ant\\apache-ant-1.7.1
+
+# Path to the configuration that you want to upgrade.
+# If you perform a full upgrade, use the path to the top-level directory of the source environment (for example, C:/InstallDir_9).
+# If you perform a partial upgrade, use the path to the specific module (for example, C:/MyAccelerator/configuration/).
+
+upgrader.priorversion.dir = C:/{configuration home}
+
+# Paths to the top-level directory of the Ant installation and the JDK installation
+# used by the configuration that you want to upgrade. For example, if you upgrade from 8.x.x to 10.x.x,
+# provide the paths to the Ant and Java versions used by 8.x.x, NOT the versions used by 10.x.x.
+# You need these parameters only for an upgrade from release 8 or earlier to be able to run preupgrade.
+# The JDK version provided here is not the version required by the InsuranceSuite Upgrade Tools.
+
+upgrader.sourceant.home = C:/{Ant home for customized configuration}
+upgrader.sourcejava.home = C:/{Java home for customized configuration}
+
+# Patterns for files and directories in the customized configuration that the upgrade steps omit during upgrade.
+# Guidewire recommends excluding all files that are not the core part of the customized configuration,
+# like temporary and generated files.
+# Files in modules/configuration/config/metadata/entity and modules/configuration/config/metadata/typelist
+# are automatically excluded from upgrade because they are read-only in Guidewire Studio and must not be customized.
+# Patterns must follow the syntax supported by the getPathMatcher method of the FileSystem class.
+# For information on the syntax rules, see java.nio.file.FileSystem#getPathMatcher(java.lang.String)
+# in the Java Platform documentation.
+
+upgrader.exclude=glob:{CVS,**/CVS,.svn,**/.svn,.git,**/.git,.idea,repository,*/*/target,*/*/generated,*/*/generated_classes,**/*.iml,tmp,build,admin,**/out}

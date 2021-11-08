@@ -1,0 +1,6 @@
+description: "Replaces references to com.guidewire.util.BigDecimalUtil with references to gw.pl.util.BigDecimalUtil in Gosu files"
+targetVersion: 10.0.0
+fileSets:
+      - GOSU
+transformations:
+      - [replaceAll, "com.guidewire.util.BigDecimalUtil\\n", "gw.pl.util.BigDecimalUtil\n"]

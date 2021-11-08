@@ -1,0 +1,7 @@
+class: com.guidewire.upgrade.steps.ferrite.pl.ReplaceImplementsEntityAdapterUpgradeStep
+description: >
+  Replace the 'adapter' attribute of <implementsEntity> elements with an
+  <implementsInterface> child element specifying the associated 'requires' interface for the
+  'iface' attribute, and specifying the value of the 'adapter' attribute
+  for the 'impl' attribute.
+targetVersion: 9.0.0

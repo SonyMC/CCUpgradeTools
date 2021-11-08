@@ -1,0 +1,7 @@
+description: >
+  Replace GWBaseDateEnhancement.CurrentDate with gw.api.util.DateUtil.currentDate() in Gosu files.
+targetVersion: 10.0.0
+fileSets:
+  - GOSU
+transformations:
+  - [replaceAll, "GWBaseDateEnhancement\\.CurrentDate", "gw\\.api\\.util\\.DateUtil\\.currentDate()"]

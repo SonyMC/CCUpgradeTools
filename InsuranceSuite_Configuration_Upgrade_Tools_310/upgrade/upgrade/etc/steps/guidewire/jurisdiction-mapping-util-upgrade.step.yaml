@@ -1,0 +1,10 @@
+description: >
+  Replace the JurisdictionMappingUtil.getJurisdictionMappingForPolicyLocation method with JurisdictionMappingUtil.getJurisdiction in PCF files,
+  Gosu files and lookup tables
+targetVersion: 10.0.0
+fileSets:
+  - PCFS
+  - GOSU
+  - LOOKUPTABLES
+transformations:
+  - [replaceAll, "JurisdictionMappingUtil\\.getJurisdictionMappingForPolicyLocation", "JurisdictionMappingUtil\\.getJurisdiction"]

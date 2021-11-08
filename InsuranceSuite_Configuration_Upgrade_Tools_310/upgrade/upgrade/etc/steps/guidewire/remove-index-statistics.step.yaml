@@ -1,0 +1,6 @@
+description: Remove <indexstatistics> child elements from <database> elements in database-config.xml.
+targetVersion: 9.0.1
+fileSets:
+  - .*/config/database-config.xml
+transformations:
+- [removeElement, "database/databasestatistics/tablestatistics/indexstatistics"]

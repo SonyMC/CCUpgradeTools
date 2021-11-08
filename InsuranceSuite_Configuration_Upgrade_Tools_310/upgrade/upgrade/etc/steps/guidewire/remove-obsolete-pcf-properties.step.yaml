@@ -1,0 +1,16 @@
+description: Remove obsolete PCF properties
+targetVersion: 10.0.0
+fileSets:
+  - PCFS
+transformations:
+  - [removeAttribute, "//*[@checkSpelling]", checkSpelling]
+  - [removeAttribute, "//Toolbar[@reflectOnBottom]", reflectOnBottom]
+  - [removeAttribute, "//Layout[@equalWidth]", equalWidth]
+  - [setAttribute, "//*[contains(local-name(), 'Cell')][number(@flex) > 0]", grow, "'true'"]
+  - [removeAttribute, "//*[contains(local-name(), 'Cell')][@flex]", flex]
+  - [setAttribute, "//*[contains(local-name(), 'Cell')][number(@numCols) and not(@width)]", width, "concat(@numCols, 'em')"]
+  - [setAttribute, "//*[contains(local-name(), 'Input')][number(@numCols) and not(@valueSectionWidth)]", valueSectionWidth, "concat(@numCols, 'em')"]
+  - [removeAttribute, "//*[contains(local-name(), 'Input')][@numCols]", numCols]
+  - [removeAttribute, "//*[contains(local-name(), 'Cell')][@numCols]", numCols]
+  - [removeAttribute, "//*[contains(local-name(), 'Input')][@valueWidth]", valueWidth]
+  - [removeAttribute, "//PrivacyCell[@unique]", unique]

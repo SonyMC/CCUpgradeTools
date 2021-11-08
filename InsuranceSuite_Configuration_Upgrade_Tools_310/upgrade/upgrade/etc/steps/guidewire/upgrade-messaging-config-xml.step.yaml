@@ -1,0 +1,6 @@
+description: Add 'defaultServer' attribute to messaging-config.xml.
+targetVersion: 9.0.0
+fileSets:
+  - .*/config/messaging/messaging-config.xml
+transformations:
+- [setAttribute, "/*", defaultServer, "'#messaging'"]

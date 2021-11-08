@@ -1,0 +1,9 @@
+description: >
+  Replace 'maxActive' attributes with 'maxTotal' attributes in <dbcp-connection-pool> elements
+  in database-config.xml.
+targetVersion: 9.0.0
+fileSets:
+  - .*/config/database-config.xml
+transformations:
+  - [setAttribute, "//*:dbcp-connection-pool[@max-active]", max-total, "@max-active"]
+  - [removeAttribute, "//*:dbcp-connection-pool[@max-active]", max-active]

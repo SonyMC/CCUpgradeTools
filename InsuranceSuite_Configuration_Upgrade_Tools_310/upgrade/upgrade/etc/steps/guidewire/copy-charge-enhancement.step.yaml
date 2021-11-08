@@ -1,0 +1,8 @@
+class: com.guidewire.upgrade.steps.general.pl.CopyFilesFromResourcesToCustomerConfigurationUpgradeStep
+description: >
+  Copy ChargeEnhancement.gsx with the deprecated API to the upgraded
+  customized configuration in the temporary directory.
+product: BC
+targetVersion: 10.0.0
+copyResources:
+  com/guidewire/upgrade/steps/deprecatedAPI/ChargeEnhancement.gsx: gsrc/gw/api/upgrade/enhancements

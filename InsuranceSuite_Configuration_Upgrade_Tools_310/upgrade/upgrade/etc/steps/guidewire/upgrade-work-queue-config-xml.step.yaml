@@ -1,0 +1,6 @@
+description: Add 'defaultServer' attribute to work-queue.xml.
+targetVersion: 9.0.0
+fileSets:
+  - .*/config/workqueue/work-queue.xml
+transformations:
+- [setAttribute, "/*", defaultServer, "'#workqueue'"]

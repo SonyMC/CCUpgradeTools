@@ -1,0 +1,11 @@
+description: Upgrade 'CoverableAdapter' and 'AbstractScheduledItemAdapter' interfaces.
+product: PC
+targetVersion: 9.0.0
+fileSets:
+- GOSU
+transformations:
+  - [continueIfMatches, "(implements\\s+CoverableAdapter)|(extends\\s+AbstractScheduledItemAdapter)"]
+  - [replaceAll, "override\\s+property\\s+get\\s+AllExclusions\\(\\)", "override property get ExclusionsFromCoverable()"]
+  - [replaceAll, "override\\s+property\\s+get\\s+AllConditions\\(\\)", "override property get ConditionsFromCoverable()"]
+  - [replaceAll, "override\\s+property\\s+get\\s+AllCoverages\\(\\)", "override property get CoveragesFromCoverable()"]
+  - [replaceAll, "override\\s+property\\s+get\\s+Clause\\(\\) : Clause", "override property get Clause() : entity.Clause"]

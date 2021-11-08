@@ -1,0 +1,7 @@
+description: Add the UWRule category to typecodes that do not have it
+product: PC
+targetVersion: 10.0.0
+fileSets:
+  - .*/config/extensions/typelist/(RuleContextDefinitionKey|TriggeringPointKey)\.ttx
+transformations:
+  - [insertChildElement, "//*:typecode[not(*[@code='UWRule'])]", "'<category code=\"UWRule\" typelist=\"Rule\" />'"]

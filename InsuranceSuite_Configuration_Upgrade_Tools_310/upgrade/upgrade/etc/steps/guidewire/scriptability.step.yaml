@@ -1,0 +1,9 @@
+description: >
+  Convert unsupported getter/setter scriptability types 'external', 'rules', 'ui', and
+  'workflow' to scriptability type 'all'.
+targetVersion: 9.0.0
+fileSets:
+  - ENTITIES
+transformations:
+  - [setAttribute, "//*[@getterScriptability=('external', 'rules', 'ui', 'workflow')]", getterScriptability, "'all'"]
+  - [setAttribute, "//*[@setterScriptability=('external', 'rules', 'ui', 'workflow')]", setterScriptability, "'all'"]

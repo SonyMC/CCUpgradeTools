@@ -1,0 +1,7 @@
+description: Upgrade PCF properties
+targetVersion: 10.0.0
+fileSets:
+  - PCFS
+transformations:
+- [setAttribute, "//Link[not(@styleClass)]", styleClass, "'noSpaceLink'"]
+- [setAttribute, "(//ClaimPickerInput |//DocumentTemplateInput |//IndustryCodeCell |//IndustryCodeInput |//OrgCell |//OrgInput |//PickerCell |//PickerInput |//ProducerCodeInput |//RiskClassCell |//RiskClassInput)[not(@clearEnabled)]", clearEnabled, "'true'"]

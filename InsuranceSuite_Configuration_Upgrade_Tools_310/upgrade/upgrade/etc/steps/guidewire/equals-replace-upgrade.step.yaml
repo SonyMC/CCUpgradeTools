@@ -1,0 +1,11 @@
+description: "Replaces lowercase usages of Relop operators within queries with their capitalized version in Gosu files"
+targetVersion: 10.0.0
+fileSets:
+  - GOSU
+transformations:
+  - [replaceAll, "compare\\((.*)([,]{1}[ ]*)greaterthanorequals", "compare($1$2GreaterThanOrEquals"]
+  - [replaceAll, "compare\\((.*)([,]{1}[ ]*)greaterthan", "compare($1$2GreaterThan"]
+  - [replaceAll, "compare\\((.*)([,]{1}[ ]*)notequals", "compare($1$2NotEquals"]
+  - [replaceAll, "compare\\((.*)([,]{1}[ ]*)equals", "compare($1$2Equals"]
+  - [replaceAll, "compareIgnoreCase\\((.*)([,]{1}[ ]*)equals", "compareIgnoreCase($1$2Equals"]
+  - [replaceAll, "compare\\((.*)([,]{1}[ ]*)equals", "compare($1$2Equals"]

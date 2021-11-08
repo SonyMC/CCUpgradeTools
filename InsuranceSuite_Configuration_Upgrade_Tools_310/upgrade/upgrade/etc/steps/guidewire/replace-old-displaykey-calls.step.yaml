@@ -1,0 +1,5 @@
+class: com.guidewire.upgrade.steps.granite.pl.ReplaceOldDisplaykeyCallsUpgradeStep
+description: >
+  Replace usages of display key types with Java API
+  calls. For example, replace displaykey.Java.Text with DisplayKey.get("Java.Text").
+targetVersion: 9.0.0

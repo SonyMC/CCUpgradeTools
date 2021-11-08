@@ -1,0 +1,9 @@
+description: >
+  Convert 'TerritoryCode.createSearchCriteria' calls to 'TerritoryCode.createLookupCriteria' calls.
+product: PC
+targetVersion: 9.0.0
+fileSets:
+  - PCFS
+  - GOSU
+transformations:
+  - [replaceAll, "([cC]ode\\.)createSearchCriteria\\(\\)", "$1createLookupCriteria()"]

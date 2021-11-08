@@ -1,0 +1,7 @@
+description: Add 'codeIdentifier' attributes to Product Model elements.
+product: PC
+targetVersion: 9.0.0
+fileSets:
+  - PRODUCT_MODEL
+transformations:
+  - [setAttribute, "//*[@public-id and not(@codeIdentifier)]", codeIdentifier, "@public-id"]

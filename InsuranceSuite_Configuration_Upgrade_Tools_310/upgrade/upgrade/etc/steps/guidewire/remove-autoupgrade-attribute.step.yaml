@@ -1,0 +1,6 @@
+description: Remove the 'autoupgrade' attribute from <database> elements in database-config.xml.
+targetVersion: 9.0.0
+fileSets:
+  - .*/config/database-config.xml
+transformations:
+  - [removeAttribute, "/*/*:database[@autoupgrade]", autoupgrade]

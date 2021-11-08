@@ -1,0 +1,8 @@
+description: Reformat rule files to comply with the 9.x.x rule format.
+targetVersion: 9.0.0
+fileSets:
+  - RULES
+transformations:
+  - [replaceAll, "\\n(.+)/\\*end00rule\\*/\\n", "\n$1\n/*end00rule*/\n\n"]
+  - [replaceAll, "\\n\\s*/\\*start00rule\\*/(.+)\\n", "\n\n/*start00rule*/\n$1\n"]
+  - [replaceAll, "\\n\\s*return\\s*/\\*start00rule\\*/(.*)\n", "\n\n/*start00rule*/\nreturn $1\n"]

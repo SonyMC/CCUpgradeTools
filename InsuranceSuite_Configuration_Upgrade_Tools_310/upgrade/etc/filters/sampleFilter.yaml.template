@@ -1,0 +1,14 @@
+# You can use the following properties:
+# - pathPatterns - a list of standard file paths and Java regular expressions for filtering files by path.
+#   Patterns are relative to the 'modules/configuration' directory. Use only forward slashes (/) as path separators on all platforms.
+# - contentPatterns - a list of Java regular expressions for filtering files by content.
+#
+# When you have 'pathPatterns' and 'contentPatterns' defined, the filter shows files that meet criteria from both properties (the AND rule).
+# All patterns are case-sensitive.
+# IMPORTANT: The YAML file must have correct syntax. For example, use only spaces for indentation (tabs are not allowed).
+# If the syntax is incorrect, Merge Tracker will not show the filter and will display a warning in the Event Log.
+
+pathPatterns:
+  - config/web/pcf/.*
+contentPatterns:
+  - width="[0-9]*%"

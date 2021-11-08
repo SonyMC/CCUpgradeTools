@@ -1,0 +1,16 @@
+#class: com.guidewire.upgrade.steps.ferrite.pl.RemoveJGroupsParamsFromConfigXmlUpgradeStep
+description: Remove JGroups-related parameters from config.xml.
+targetVersion: 9.0.0
+fileSets:
+- .*/config/config.xml
+transformations:
+- [removeElement, "//*:param[@name=(
+        'JGroupsClusterChannel',
+        'ClusterMulticastAddress',
+        'ClusterMulticastTTL',
+        'ClusterMulticastPort',
+        'JGroupsWatchdogHeartbeatIntervalSecs',
+        'JGroupsWatchdogMissedHeartbeatsBeforeReset',
+        'ClusterProtocolStackOption1',
+        'ClusterProtocolStackOption2',
+        'ClusterProtocolStack')]"]

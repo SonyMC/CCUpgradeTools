@@ -1,0 +1,7 @@
+description: "Replace references to gw.api.productmodel.Schedule with references to gw.api.domain.Schedule in PCF and Gosu files"
+targetVersion: 10.0.0
+fileSets:
+  - GOSU
+  - PCFS
+transformations:
+  - [replaceAll, "gw\\.api\\.productmodel\\.Schedule", "gw\\.api\\.domain\\.Schedule"]

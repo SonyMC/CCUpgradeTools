@@ -1,0 +1,26 @@
+class: com.guidewire.upgrade.steps.granite.pl.ScriptParametersEnhancementUpgradeStep
+description: >
+    Check ScriptParameterPack elements in config/resources/ScriptParameters.xml in the customized configuration
+    and for all elements added by the customer create an
+    Ex_ScriptParametersEnhancement.gsx enhancement with the get property in gsrc/gw/scriptparameter in the
+    upgraded customized configuration in the temporary directory.
+typesMap:
+  bit: Boolean
+  datetime: Date
+  decimal: BigDecimal
+  integer: Integer
+  money: BigDecimal
+  monthlyfrequency: Integer
+  nonnegativeinteger: Integer
+  nonnegativemoney: BigDecimal
+  percentage: Integer
+  percentagedec: BigDecimal
+  phone: String
+  positiveinteger: Integer
+  positivemoney: BigDecimal
+  postalcode: String
+  risk: BigDecimal
+  speed: Integer
+  varchar: String
+  weeklyfrequency: Integer
+  year: Integer

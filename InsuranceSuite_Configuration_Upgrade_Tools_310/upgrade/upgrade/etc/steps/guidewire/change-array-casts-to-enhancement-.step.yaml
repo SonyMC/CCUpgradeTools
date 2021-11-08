@@ -1,0 +1,6 @@
+class: com.guidewire.upgrade.steps.ferrite.pl.ChangeArrayCastsToEnhancementUpgradeStep
+description: >
+  Create a Gosu enhancement file, AsArrayOfEnhancement.gsx or AsArrayOfEnhancementV10.gsx, with
+  the asArrayOf method and replace casting syntax in PCF and
+  Gosu files to use the method. For example, x as String[] is changed to x?.asArrayOf(String).
+targetVersion: 10.0.0

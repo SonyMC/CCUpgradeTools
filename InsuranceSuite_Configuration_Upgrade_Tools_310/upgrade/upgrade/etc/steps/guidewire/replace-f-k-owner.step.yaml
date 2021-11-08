@@ -1,0 +1,11 @@
+description: >
+  Replace foreign key attribute 'owner="true"' with 'archivingOwner="source"'; replace foreign
+  key attribute 'owner="false"' with 'archivingOwner="target"'; add foreign key attribute 'archivingOwner="none"'
+  when <CrossDomainPublicID> is present.
+targetVersion: 9.0.0
+fileSets:
+  - ENTITIES
+transformations:
+  - [setAttribute, "//foreignkey[@owner]", archivingOwner, "if (normalize-space(lower-case(@owner))='true') then 'source' else 'target'"]
+  - [setAttribute, "//foreignkey[tag[@name = 'CrossDomainPublicID']]", archivingOwner, "'none'"]
+  - [removeAttribute, "//foreignkey[@owner]", owner]

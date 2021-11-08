@@ -1,0 +1,7 @@
+description: Add 'server' attribute to scheduler-config.xml.
+targetVersion: 9.0.0
+fileSets:
+  - .*/config/scheduler/scheduler-config.xml
+transformations:
+- [setAttribute, "/*", server, "'#scheduler'"]
+- [setAttribute, "/*", initialDelay, "'180'"]

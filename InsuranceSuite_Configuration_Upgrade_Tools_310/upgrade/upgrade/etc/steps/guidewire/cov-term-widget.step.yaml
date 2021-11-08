@@ -1,0 +1,13 @@
+description: Convert <CovTemXxxInput> and <CovTermXxxCell> to <RangeInput>.
+product: PC
+targetVersion: 9.0.0
+fileSets:
+  - PCFS
+transformations:
+- [setAttribute, "(//CovTermTypekeyInput|//CovTermTypekeyCell)", valueRange, "concat(@value, '?.Pattern.OrderedAvailableValues')"]
+- [setAttribute, "(//CovTermOptionInput|//CovTermOptionCell|//CovTermPackageInput|//CovTermPackageCell)", valueRange, "concat('gw.web.productmodel.ChoiceCovTermUtil.getModelValueRange(', @value, ', openForEdit)')"]
+- [setAttribute, "(//CovTermTypekeyInput|//CovTermTypekeyCell)", value, "concat(@value, '.Value')"]
+- [setAttribute, "(//CovTermOptionInput|//CovTermOptionCell)", value, "concat(@value, '.OptionValue')"]
+- [setAttribute, "(//CovTermPackageInput|//CovTermPackageCell)", value, "concat(@value, '.PackageValue')"]
+- [renameElement, "(//CovTermTypekeyInput|//CovTermOptionInput|//CovTermPackageInput)", RangeInput]
+- [renameElement, "(//CovTermTypekeyCell|//CovTermOptionCell|//CovTermPackageCell)", RangeCell]

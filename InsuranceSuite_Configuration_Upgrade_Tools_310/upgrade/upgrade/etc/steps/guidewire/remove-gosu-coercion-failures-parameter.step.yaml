@@ -1,0 +1,6 @@
+description: "Removes obsolete 'ThrowOnGosuCoercionFailuresForLongFloatDouble' configuration parameter from config.xml"
+targetVersion: 10.0.2
+fileSets:
+- .*/config/config.xml
+transformations:
+  - [removeElement, "//*:param[@name='ThrowOnGosuCoercionFailuresForLongFloatDouble']"]

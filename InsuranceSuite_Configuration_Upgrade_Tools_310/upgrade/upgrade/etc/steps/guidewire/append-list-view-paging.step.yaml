@@ -1,0 +1,5 @@
+class: com.guidewire.upgrade.steps.granite.pl.AppendListViewPagingUpgradeStep
+description: >
+  Remove the appendListViewPaging property from TitleBar and set the
+  appendPageInfo property in RowIterator in PCFs
+targetVersion: 10.0.0

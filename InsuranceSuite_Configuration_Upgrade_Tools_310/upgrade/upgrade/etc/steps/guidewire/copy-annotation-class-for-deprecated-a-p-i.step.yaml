@@ -1,0 +1,6 @@
+class: com.guidewire.upgrade.steps.general.pl.CopyFilesFromResourcesToCustomerConfigurationUpgradeStep
+description: >
+    Copy the DeprecatedAndRestoredByUpgrade.gs annotation class to to gsrc/gw/api/upgrade/enhancements in
+    the upgraded customized configuration in the temporary directory.
+copyResources:
+    com/guidewire/upgrade/steps/deprecatedAPI/DeprecatedAndRestoredByUpgrade.gs: gsrc/gw/api/upgrade/enhancements

@@ -1,0 +1,7 @@
+description: Replace <DisplayNameColumn> with <Column ... displayName="true" ...>.
+targetVersion: 9.0.0
+fileSets:
+  - DISPLAY_NAMES
+transformations:
+- [setAttribute, "/Entity/Columns/DisplayNameColumn[not(@displayName)]", displayName, "'true'"]
+- [renameElement, "/Entity/Columns/DisplayNameColumn", "Column"]

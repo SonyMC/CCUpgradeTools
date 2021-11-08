@@ -1,0 +1,7 @@
+description: Remove Document Assistant related parameters from config.xml.
+targetVersion: 9.0.0
+fileSets:
+  - .*/config/config.xml
+transformations:
+  - [removeElement, "//*:param[@name=('AllowDocumentAssistant', 'DocumentAssistantJNLP', 'UseDocumentAssistantToDisplayDocuments')]"]
+  - [replaceAll, "\\s*[(]*\\s*when\\s*AllowDocumentAssistant\\s*is\\s*set\\s*to\\s*false.\\s*Must\\s*be\\s*either\\s*'inline'\\s*[(]the\\s*default[)]\\s*or\\s*'attachment'\\s*", " "]

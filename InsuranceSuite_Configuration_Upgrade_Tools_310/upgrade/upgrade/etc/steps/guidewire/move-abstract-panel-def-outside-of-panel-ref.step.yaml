@@ -1,0 +1,6 @@
+description: Move <AbstractPanelDef> outside of <PanelRef>
+targetVersion: 9.0.0
+fileSets:
+  - PCFS
+transformations:
+- [moveElementBefore, "//*:PanelRef[@def]/( CardViewPanel|ChartPanel|DetailViewPanel|ListDetailPanel|ListViewPanel |PanelRow|PanelSet|SearchPanel|TemplatePanel|TreeViewPanel )", ..]

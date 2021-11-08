@@ -1,0 +1,6 @@
+description: Remove the non-functional 'ondelete' attribute from entities.
+targetVersion: 9.0.0
+fileSets:
+  - ENTITIES
+transformations:
+  - [removeAttribute, "(//*:foreignkey|//*:edgeForeignKey)[@ondelete]", ondelete]

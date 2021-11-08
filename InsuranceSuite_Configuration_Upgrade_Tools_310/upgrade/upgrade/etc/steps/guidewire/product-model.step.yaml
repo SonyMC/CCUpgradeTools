@@ -1,0 +1,16 @@
+description: Upgrade Product Model references in Gosu and PCFs.
+product: PC
+targetVersion: 9.0.0
+fileSets:
+  - PCFS
+  - GOSU
+transformations:
+  - [replaceAll, "(?<!\\.)(Option[A-Z][A-Z]7\\w+)Value\\b", "gw.api.productmodel.CovTermOpt<$1>"]
+  - [replaceAll, "(?<!\\[.\\w])productmodel\\.(Option[A-Z][A-Z]7\\w+)Value\\b", "gw.api.productmodel.CovTermOpt<$1>"]
+  - [replaceAll, "(?m)\\.(\\s*)getCovTermPattern\\s*\\(", ".$1getCovTermPatternByPublicId("]
+  - [replaceAll, "(?m)\\.(\\s*)getCoverageCategory\\s*\\(", ".$1getCoverageCategoryByPublicId("]
+  - [replaceAll, "(?m)\\.(\\s*)getCoveragePattern\\s*\\(", ".$1getCoveragePatternByPublicId("]
+  - [replaceAll, "(?m)\\.(\\s*)withQuestionCode\\s*\\(", ".$1withQuestionByPublicId("]
+  - [replaceAll, "(SYMBOL_\\d{1,2})Available", "isCoverageSymbolTypeAvailable(CoverageSymbolType.TC_$1)"]
+  - [replaceAll, "(\\s*)(\\S+)(SYMBOL_\\d{1,2})Selected", "$1setter=\"coverageSymbolGroup.setCoverageSymbolTypeSelected(CoverageSymbolType.TC_$3, VALUE)\"$1$2isCoverageSymbolTypeSelected(CoverageSymbolType.TC_$3)"]
+  - [replaceAll, "PCCoercions.makeProductModel<(\\w+)>\\((.*)\\?\\s?(\\w+)\\s?:\\s?(null)\\)", "$2? PCCoercions.makeProductModel<$1>($3) : $4"]

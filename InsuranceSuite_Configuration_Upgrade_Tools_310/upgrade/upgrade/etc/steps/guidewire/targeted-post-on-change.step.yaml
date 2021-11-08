@@ -1,0 +1,13 @@
+description: >
+  Remove the target attribute from PostOnChange and refreshTarget from
+  add/remove buttons
+targetVersion: 10.0.2
+fileSets:
+  - PCFS
+transformations:
+  - [setAttribute, "//PostOnChange[@target]", deferUpdate, "'false'"]
+  - [removeAttribute, "//PostOnChange[@target]", target]
+  - [removeAttribute, "//AddButton[@refreshTarget]", refreshTarget]
+  - [removeAttribute, "//AddMenuItem[@refreshTarget]", refreshTarget]
+  - [removeAttribute, "//IteratorButtons[@refreshTarget]", refreshTarget]
+  - [removeAttribute, "//RemoveButton[@refreshTarget]", refreshTarget]

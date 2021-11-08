@@ -1,0 +1,8 @@
+description: Remove obsolete PCF properties, part 2
+targetVersion: 10.0.2
+fileSets:
+  - PCFS
+transformations:
+  - [removeAttribute, "//*[@imeMode]", imeMode]
+  - [removeAttribute, "//TreeView[@entireTreeAtClient]", entireTreeAtClient]
+  - [removeAttribute, "//LocationGroup[@pageLinksRenderer]", pageLinksRenderer]

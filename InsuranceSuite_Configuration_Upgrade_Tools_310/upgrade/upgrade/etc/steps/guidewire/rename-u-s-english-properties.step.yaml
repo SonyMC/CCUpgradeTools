@@ -1,0 +1,3 @@
+class: com.guidewire.upgrade.steps.granite.pl.RenameUSEnglishPropertiesUpgradeStep
+description: Rename *_en_US.properties to *.properties
+targetVersion: 10.0.0

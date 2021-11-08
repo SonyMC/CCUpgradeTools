@@ -1,0 +1,13 @@
+description: >
+  In entities, find edgeForeignKey and edgeForeignKey-override elements that have
+  a child implementsEntity element with the Name attribute set to
+  Extractable or OverlapTable, add the extractable or overlapTable attribute to
+  these elements and set it to true, and remove the
+  child implementsEntity element.
+targetVersion: 10.0.0
+fileSets:
+  - ENTITIES
+transformations:
+- [setAttribute, "(//*:edgeForeignKey | //*:edgeForeignKey-override)[*:implementsEntity[@name = 'Extractable']]", extractable, "'true'"]
+- [setAttribute, "(//*:edgeForeignKey | //*:edgeForeignKey-override)[*:implementsEntity[@name = 'OverlapTable']]", overlapTable, "'true'"]
+- [removeElement, "(//*:edgeForeignKey | //*:edgeForeignKey-override)/*:implementsEntity[@name='Extractable' or @name='OverlapTable']"]

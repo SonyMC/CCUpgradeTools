@@ -1,0 +1,11 @@
+description: >
+  Rename <AuditSchedulePattern> and <SingleCheckingAuditSchedulePattern> to either <SingleAuditSchedulePattern> or <SeriesAuditSchedulePattern>,
+  depending on the 'series' attribute, and remove the 'series' attribute.
+product: PC
+targetVersion: 9.0.0
+fileSets:
+  - .*/config/resources/productmodel/auditschedules.*\.xml
+transformations:
+  - [renameElement, "(/AuditSchedulePattern|/SingleCheckingAuditSchedulePattern)[lower-case(@series)='true']", SeriesAuditSchedulePattern]
+  - [renameElement, "(/AuditSchedulePattern|/SingleCheckingAuditSchedulePattern)[not(lower-case(@series)='true')]", SingleAuditSchedulePattern]
+  - [removeAttribute, "(/AuditSchedulePattern|/SeriesAuditSchedulePattern|/SingleAuditSchedulePattern|/SingleCheckingAuditSchedulePattern)", series]

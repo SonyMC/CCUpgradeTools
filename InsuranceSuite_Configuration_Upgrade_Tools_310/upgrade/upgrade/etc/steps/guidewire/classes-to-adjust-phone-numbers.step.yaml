@@ -1,0 +1,14 @@
+class: com.guidewire.upgrade.steps.ferrite.pl.UpgradePhoneTypeUpgradeStep
+description: >
+  Performs a set of steps related to the phone
+  numbers: 1) Creates Ex_<ENTITY>Enhancement for each entity that has at
+  least one property of the phone type 2) Creates <ENTITY>PhoneMappers.gs
+  for each entity that has at least one property of
+  the phone type and edits the implementation of the EntityPhoneMapperEntries
+  property in DefaultPhoneNormalizerPlugin.gs 3) In data model, adds, if needed,
+  two columnParams sub-nodes, phonecountrycodeProperty and extensionProperty, for each node of
+  the phone type 4) Creates PhoneParser.gs and UniversalPhoneOwner.gs classes
+targetVersion: 9.0.0
+copyResources:
+  com/guidewire/upgrade/steps/phone/PhoneParser.gs: gsrc/gw/api/phone/upgrade
+  com/guidewire/upgrade/steps/phone/UniversalPhoneOwner.gs: gsrc/gw/api/phone/upgrade

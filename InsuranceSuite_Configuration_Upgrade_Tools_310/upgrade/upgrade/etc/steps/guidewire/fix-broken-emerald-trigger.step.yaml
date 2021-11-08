@@ -1,0 +1,5 @@
+class: com.guidewire.upgrade.steps.ferrite.pl.FixBrokenEmeraldTriggerUpgradeStep
+description: >
+    Fix any PCF FormatCell elements that were broken during
+    upgrade from Diamond to Emerald
+targetVersion: 9.0.0

@@ -1,0 +1,9 @@
+description: >
+  Replace the 'effdatedOnly' attribute of <delegate> elements with 'requiresType="effdated"'
+  for the value.
+targetVersion: 9.0.0
+fileSets:
+  - ENTITIES
+transformations:
+  - [setAttribute, "/*:delegate[@effdatedOnly='true']", requiresType, "'effdated'"]
+  - [removeAttribute, "/*:delegate[@effdatedOnly]", effdatedOnly]

@@ -1,0 +1,8 @@
+description: >
+  Remove the 'AddressBookUID' definition from all entities that implement
+  the 'AddressBookLinkable' delegate.
+targetVersion: 9.0.0
+fileSets:
+  - ENTITIES
+transformations:
+  - [removeElement, "/*/column[../implementsEntity[@name = 'AddressBookLinkable'] and @name = 'AddressBookUID']"]

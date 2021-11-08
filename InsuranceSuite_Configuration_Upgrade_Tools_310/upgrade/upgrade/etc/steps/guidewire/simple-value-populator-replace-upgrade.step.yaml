@@ -1,0 +1,6 @@
+description: "Replaces usages of gw.webservice.pc.pc700.gxmodel.SimpleValuePopulator with usages of gw.webservice.pc.pc1000.gxmodel.SimpleValuePopulator in Gosu files"
+targetVersion: 10.0.0
+fileSets:
+      - GOSU
+transformations:
+      - [replaceAll, "uses gw.webservice.pc.pc700.gxmodel.SimpleValuePopulator", "uses gw.webservice.pc.pc1000.gxmodel.SimpleValuePopulator"]

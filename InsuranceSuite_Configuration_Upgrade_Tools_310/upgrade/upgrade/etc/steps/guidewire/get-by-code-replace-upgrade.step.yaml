@@ -1,0 +1,32 @@
+description: "Replaces product model pattern calls to XXPattern.getByCode() with calls to XXPatternLookup.getByCodeIdentifier() in PCF, Gosu, display names, and product model files"
+targetVersion: 10.0.0
+fileSets:
+  - PCFS
+  - GOSU
+  - DISPLAY_NAMES
+  - PRODUCT_MODEL
+transformations:
+  - [replaceAll, "ClausePattern.getByCode\\(", "ClausePatternLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "ConditionPattern.getByCode\\(", "ClausePatternLookup.getConditionPatternByCodeIdentifier\\("]
+  - [replaceAll, "CoverageCategory.getByCode\\(", "CoverageCategoryLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "CoveragePattern.getByCode\\(", "ClausePatternLookup.getCoveragePatternByCodeIdentifier\\("]
+  - [replaceAll, "CoverageSymbolPatternLookup.getByCode\\(", "CoverageSymbolPatternLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "(\\W)CovTermPattern.getByCode\\(", "$1CovTermPatternLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "CovTermPatternLookup.getByCode\\(", "CovTermPatternLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "ExclusionPattern.getByCode\\(", "ClausePatternLookup.getExclusionPatternByCodeIdentifier\\("]
+  - [replaceAll, "ModifierPattern.getByCode\\(", "ModifierPatternLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "ModifierPatternLookup.getByCode\\(", "ModifierPatternLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "Offering.getByCode\\(", "OfferingLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "OfferingLookup.getByCode\\(", "OfferingLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "OptionCovTermPattern.getByCode\\(", "OptionCovTermPattern.getByCode\\("]
+  - [replaceAll, "PolicyLinePattern.getByCode\\(", "PolicyLinePatternLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "PolicyLinePatternLookup.getByCode\\(", "PolicyLinePatternLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "Product.getByCode\\(", "ProductLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "ProductLookup.getByCode\\(", "ProductLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "Question.getByCode\\(", "QuestionLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "QuestionChoice.getByCode\\(", "QuestionChoiceLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "QuestionChoiceLookup.getByCode\\(", "QuestionChoiceLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "QuestionLookup.getByCode\\(", "QuestionLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "RateFactorPatternBase.getByCode\\(", "RateFactorPatternBaseLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "RateFactorPatternBaseLookup.getByCode\\(", "RateFactorPatternBaseLookup.getByCodeIdentifier\\("]
+  - [replaceAll, "RateFactorPatternBaseLookup.getByCode\\(", "RateFactorPatternBaseLookup.getByCodeIdentifier\\("]

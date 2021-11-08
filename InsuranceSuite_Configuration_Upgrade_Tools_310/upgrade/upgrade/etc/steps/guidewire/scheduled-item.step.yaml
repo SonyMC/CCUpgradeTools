@@ -1,0 +1,11 @@
+description: Simplify 'ScheduledItem' multiple type expressions.
+product: PC
+targetVersion: 9.0.0
+fileSets:
+  - PCFS
+  - GOSU
+transformations:
+  - [replaceAll, "EffDated\\s+&\\s+ScheduledItem", ScheduledItem]
+  - [replaceAll, "KeyableBean\\s+&\\s+ScheduledItem", ScheduledItem]
+  - [replaceAll, "ScheduledItem\\s+&\\s+EffDated", ScheduledItem]
+  - [replaceAll, "ScheduledItem\\s+&\\s+KeyableBean", ScheduledItem]

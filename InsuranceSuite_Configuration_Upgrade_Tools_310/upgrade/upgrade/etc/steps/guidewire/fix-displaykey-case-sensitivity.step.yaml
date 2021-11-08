@@ -1,0 +1,6 @@
+class: com.guidewire.upgrade.steps.granite.pl.FixDisplaykeyCaseSensitivityUpgradeStep
+description: >
+    Change display keys in DisplayKey.get("displaykey") expressions in Gosu and
+    PCF files to be the same as their definitions in
+    the display.properties or display_*.properties file.
+targetVersion: 9.0.0

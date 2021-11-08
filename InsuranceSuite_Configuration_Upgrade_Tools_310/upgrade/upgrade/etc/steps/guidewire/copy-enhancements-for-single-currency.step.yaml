@@ -1,0 +1,16 @@
+class: com.guidewire.upgrade.steps.granite.bc.CopyEnhnacementsForCurrencyModeToCustomerConfigurationUpgradeStep
+description: >
+  Copy enhancements dedicated for single currency from the resources
+  to the upgraded customized configuration in the temporary directory.
+product: BC
+targetVersion: 10.0.0
+currency: SINGLE
+copyResources:
+  com/guidewire/upgrade/steps/currencyPlans/single/AgencyBillPlanBuilderEnhancement.gsx: gsrc/gw/api/upgrade/enhancements
+  com/guidewire/upgrade/steps/currencyPlans/single/AgencyBillPlanEnhancement.gsx: gsrc/gw/api/upgrade/enhancements
+  com/guidewire/upgrade/steps/currencyPlans/single/BillingPlanBuilderEnhancement.gsx: gsrc/gw/api/upgrade/enhancements
+  com/guidewire/upgrade/steps/currencyPlans/single/BillingPlanEnhancement.gsx: gsrc/gw/api/upgrade/enhancements
+  com/guidewire/upgrade/steps/currencyPlans/single/DelinquencyPlanBuilderEnhancement.gsx: gsrc/gw/api/upgrade/enhancements
+  com/guidewire/upgrade/steps/currencyPlans/single/DelinquencyPlanEnhancement.gsx: gsrc/gw/api/upgrade/enhancements
+  com/guidewire/upgrade/steps/currencyPlans/single/PaymentPlanBuilderEnhancement.gsx: gsrc/gw/api/upgrade/enhancements
+  com/guidewire/upgrade/steps/currencyPlans/single/PaymentPlanEnhancement.gsx: gsrc/gw/api/upgrade/enhancements

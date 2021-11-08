@@ -1,0 +1,7 @@
+description: Remove the obsolete 'subpackage' attribute from entities and typelists.
+targetVersion: 9.0.0
+fileSets:
+  - ENTITIES
+  - TYPELISTS
+transformations:
+  - [removeAttribute, "/*[@subpackage]", subpackage]

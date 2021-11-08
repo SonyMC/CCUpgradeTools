@@ -1,0 +1,2 @@
+class: com.guidewire.upgrade.steps.ReformatXmlUpgradeStep
+description: Clean up the structure of the XML configuration files, such as entities, typelists, and PCF files.

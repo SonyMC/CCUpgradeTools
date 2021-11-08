@@ -1,0 +1,6 @@
+description: Replace relative package names with fully qualified package names in PCFs.
+targetVersion: 9.0.0
+fileSets:
+  - PCFS
+transformations:
+- [replaceAll, "(?<!\\.)web\\.job\\.JobWizardHelper", "gw.api.web.job.JobWizardHelper"]

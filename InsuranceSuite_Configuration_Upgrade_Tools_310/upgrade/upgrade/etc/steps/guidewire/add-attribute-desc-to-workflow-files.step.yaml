@@ -1,0 +1,6 @@
+description: Add the desc attribute to the AutoStep, ManualStep and Outcome elements in workflow files
+targetVersion: 10.0.0
+fileSets:
+  - WORKFLOWS
+transformations:
+- [setAttribute, "(//AutoStep|//ManualStep|//Outcome)[(not(@desc) or @desc = '') and @id]", desc, "replace(@id, '([a-z])([A-Z])', '$1 $2')"]

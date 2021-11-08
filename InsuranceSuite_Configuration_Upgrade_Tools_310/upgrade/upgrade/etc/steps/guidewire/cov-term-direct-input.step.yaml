@@ -1,0 +1,11 @@
+description: Convert <CovTermDirectInput> to <InputSetRef>.
+product: PC
+targetVersion: 9.0.0
+fileSets:
+  - PCFS
+transformations:
+- [setAttribute, "//CovTermDirectInput", def, "concat('CovTermDirectInputSet(', ./@value, ')')"]
+- [removeAttribute, "//CovTermDirectInput", value]
+- [removeAttribute, "//CovTermDirectInput", label]
+- [removeAttribute, "//CovTermDirectInput", required]
+- [renameElement, "//CovTermDirectInput", InputSetRef]

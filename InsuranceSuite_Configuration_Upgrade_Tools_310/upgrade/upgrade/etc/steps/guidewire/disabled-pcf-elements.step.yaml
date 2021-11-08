@@ -1,0 +1,3 @@
+class: com.guidewire.upgrade.steps.ferrite.pl.DisabledPcfElementsUpgradeStep
+description: Convert commented PCF nodes to disabled PCF nodes.
+targetVersion: 9.0.0

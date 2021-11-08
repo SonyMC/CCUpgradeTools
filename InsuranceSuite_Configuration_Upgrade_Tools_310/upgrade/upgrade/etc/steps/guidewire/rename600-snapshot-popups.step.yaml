@@ -1,0 +1,8 @@
+description: Rename old snapshot PCFs to include version number.
+product: CC
+targetVersion: 9.0.0
+fileSets:
+- .*/config/web/pcf/claim/snapshot/600/ClaimSnapshot(Dwelling|InjuredInjury|LivingExpenses|OtherStructure|PropertyContents)IncidentPopup.pcf
+transformations:
+  - [setAttribute, "PCF/*[@id]", "id", "replace(@id, 'Popup$', '600Popup')"]
+  - [renameFile, "Popup.pcf$", "600Popup.pcf"]

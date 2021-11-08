@@ -1,0 +1,11 @@
+description: "Refactors custom castings from String to Date with the Date.createDateTimeInstance method in PCF and Gosu files"
+targetVersion: 10.0.0
+fileSets:
+  - PCFS
+  - GOSU
+transformations:
+  - [replaceAll, "\"(\\d{4})-(\\d{1,2})-(\\d{1,2})\" as Date", "Date.createDateInstance($2, $3, $1)"]
+  - [replaceAll, "\"(\\d{1,2})/(\\d{1,2})/(\\d{4})\" as DateTime", "Date.createDateInstance($1, $2, $3)"]
+  - [replaceAll, "\"(\\d{1,2})/(\\d{1,2})/(\\d{4})\" as Date", "Date.createDateInstance($1, $2, $3)"]
+  - [replaceAll, "\"(\\d{4})-(\\d{1,2})-(\\d{1,2}) (\\d{1,2}):(\\d{1,2}):(\\d{1,2})\" as Date", "Date.createDateInstance($2, $3, $1).addHours($4).addMinutes($5).addSeconds($6)"]
+  - [replaceAll, "\"(\\d{4})-(\\d{1,2})-(\\d{1,2}) (\\d{1,2}):(\\d{1,2}):(\\d{1,2}).(\\d{1,3})\" as Date", "Date.createDateInstance($2, $3, $1).addHours($4).addMinutes($5).addSeconds($6)"]

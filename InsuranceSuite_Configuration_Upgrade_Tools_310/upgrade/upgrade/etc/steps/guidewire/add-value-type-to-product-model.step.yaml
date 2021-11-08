@@ -1,0 +1,17 @@
+description: Add missing 'valueType' attributes to Product Model elements.
+product: PC
+targetVersion: 9.0.0
+fileSets:
+  - PRODUCT_MODEL
+transformations:
+  - [setAttribute, "//DirectCovTermPattern[normalize-space(@valueType)='']", valueType, "'other'"]
+  - [setAttribute, "//PackageTerm[normalize-space(@valueType)='' and matches(@value, 'USD|\\$')]", valueType, "'money'"]
+  - [setAttribute, "//PackageTerm[normalize-space(@valueType)='' and matches(@value, '%')]", valueType, "'percent'"]
+  - [setAttribute, "//PackageTerm[normalize-space(@valueType)='' and matches(@value, 'days')]", valueType, "'days'"]
+  - [setAttribute, "//PackageTerm[normalize-space(@valueType)='' and matches(@value, 'hour')]", valueType, "'hours'"]
+  - [setAttribute, "//PackageTerm[normalize-space(@valueType)='' or normalize-space(@valueType)='']", valueType, "'other'"]
+  - [setAttribute, "//OptionCovTermPattern[normalize-space(@valueType)='']/Options/CovTermOpt[matches(@optionCode,'USD|\\$')]/../..", valueType, "'money'"]
+  - [setAttribute, "//OptionCovTermPattern[normalize-space(@valueType)='']/Options/CovTermOpt[matches(@optionCode,'%')]/../..", valueType, "'percent'"]
+  - [setAttribute, "//OptionCovTermPattern[normalize-space(@valueType)='']/Options/CovTermOpt[matches(@optionCode,'day')]/../..", valueType, "'days'"]
+  - [setAttribute, "//OptionCovTermPattern[normalize-space(@valueType)='']/Options/CovTermOpt[matches(@optionCode,'hour')]/../..", valueType, "'hours'"]
+  - [setAttribute, "//OptionCovTermPattern[normalize-space(@valueType)='']", valueType, "'other'"]

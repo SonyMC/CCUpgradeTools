@@ -1,0 +1,5 @@
+class: com.guidewire.upgrade.steps.ferrite.pl.RenameDisplaykeyUpgradeStep
+description: >
+  Look for display keys that changed between releases
+  and rename them in the locale properties, PCF files and
+  Gosu files.

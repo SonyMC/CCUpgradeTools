@@ -1,0 +1,361 @@
+
+<!DOCTYPE html
+  SYSTEM "about:legacy-compat">
+<html xmlns="http://www.w3.org/1999/xhtml" xmlns:whc="http://www.oxygenxml.com/webhelp/components" xmlns:gw="http://guidewire.com/docs/components" xml:lang="en-us" lang="en-us">
+    <head><link rel="shortcut icon" href="../oxygen-webhelp/template/resources/images/webpagelogo.ico"><!----></link><link rel="icon" href="../oxygen-webhelp/template/resources/images/webpagelogo.ico"><!----></link><meta http-equiv="Content-Type" content="text/html; charset=UTF-8" /><meta name="viewport" content="width=device-width, initial-scale=1.0" /><meta name="description" content="Add missing reified keyword Inspection ID: AddMissingReifiedKeyword Gosu requires the reified keyword as a modifier on generic functions that are equivalent to parameterized Java functions that have ..." /><meta charset="UTF-8" /><meta name="copyright" content="(C) Copyright 2020" /><meta name="DC.rights.owner" content="(C) Copyright 2020" /><meta name="DC.type" content="reference" /><meta name="DC.relation" scheme="URI" content="../topics/c_upgrade-inspections-tool.html" /><meta name="DC.relation" scheme="URI" content="../topics/r_upgrade-inspections-commands.html" /><meta name="DC.relation" scheme="URI" content="../topics/c_error-log-files.html" /><meta name="DC.format" content="HTML5" /><meta name="DC.identifier" content="upgrade-inspections-reference" /><meta name="DC.language" content="en-US" /><title>Upgrade inspections reference</title><!--  Generated with Oxygen version 21.1, build number 2019112512.  --><meta name="wh-path2root" content="../" /><meta name="wh-toc-id" content="upgrade-inspections-reference-d49e1339" /><link rel="preload" href="../oxygen-webhelp/template/resources/fonts/arial-webfont.woff2" as="font" /><link rel="preload" href="../oxygen-webhelp/template/resources/fonts/sourcesanspro-regular.woff2" as="font" /><link rel="preload" href="../oxygen-webhelp/template/resources/fonts/sourcesanspro-light-webfont.woff2" as="font" /><link rel="preload" href="../oxygen-webhelp/template/resources/fonts/sourcesanspro-extralight-webfont.woff2" as="font" /><link rel="preload" href="../oxygen-webhelp/template/resources/fonts/sourcesanspro-black-webfont.woff2" as="font" /><link rel="preload" href="../oxygen-webhelp/template/resources/fonts/sourcesanspro-semibold-webfont.woff2" as="font" /><link rel="preload" href="../oxygen-webhelp/template/resources/fonts/AvenirNextLTPro-Regular.woff" as="font" /><link rel="preload" href="../oxygen-webhelp/template/resources/fonts/cour.woff2" as="font" /><link rel="preload" href="../oxygen-webhelp/template/resources/js/simplebar.js" as="script" /><link rel="preload" href="../oxygen-webhelp/template/resources/css/simplebar.min.css" as="style" /><link rel="preload" href="../oxygen-webhelp/template/resources/images/chevron-left.svg" as="image" /><link rel="preload" href="../oxygen-webhelp/template/resources/images/chevron-right.svg" as="image" /><link rel="preload" href="../oxygen-webhelp/template/resources/images/share-alt.svg" as="image" /><link rel="preload" href="../oxygen-webhelp/template/resources/images/print-solid.svg" as="image" /><link rel="preload" href="../oxygen-webhelp/template/resources/images/times.svg" as="image" /><link rel="preload" href="../oxygen-webhelp/template/resources/images/angle-double-left.svg" as="image" /><link rel="preload" href="../oxygen-webhelp/template/resources/images/note.svg" as="image" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/lib/bootstrap/css/bootstrap.min.css?buildId=20191106" /><link rel="stylesheet" href="../oxygen-webhelp/lib/jquery-ui/jquery-ui.min.css?buildId=20191106" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/app/topic-page.css?buildId=2019112512" /><script type="text/javascript" src="../oxygen-webhelp/lib/jquery/jquery-3.4.1.min.js?buildId=20191106"><!----></script><script data-main="../oxygen-webhelp/app/topic-page.js" src="../oxygen-webhelp/lib/requirejs/require.js"></script><link rel="preload" href="../topics/r_upgrade-inspections-commands.html" as="document" /><link rel="preload" href="../topics/c_error-log-files.html" as="document" /><link rel="stylesheet" type="text/css" href="../oxygen-webhelp/template/resources/css/Guidewire-whr.css?buildId=2019112512" /></head>
+    
+    <body id="upgrade-inspections-reference" class="wh_topic_page frmBody">
+        <gw:portal_tag_manager_body_script></gw:portal_tag_manager_body_script>
+        <a href="#wh_topic_body" class="sr-only sr-only-focusable">Jump to main content</a>
+        <!-- EXM-36950 - Expand the args.hdr parameter here -->
+        
+        
+        
+        <header class="navbar navbar-default wh_header navbar-fixed-top" id="affix1">
+    <div class="container-fluid">
+        <div class="wh_header_flex_container">
+            <div class="wh_logo_and_publication_title_container">
+                <div class="wh_logo_and_publication_title">
+                    
+                    <!--
+                            This component will be generated when the next parameters are specified in the transformation scenario:
+                            'webhelp.logo.image' and 'webhelp.logo.image.target.url'.
+                            See: http://oxygenxml.com/doc/versions/17.1/ug-editor/#topics/dita_webhelp_output.html.
+                    -->
+                    <a href="../index.html" title="InsuranceSuite Configuration Upgrade Tools 3.1.0" aria-label="InsuranceSuite Configuration Upgrade Tools 3.1.0" class=" wh_logo not-hidden-xs "><img src="../oxygen-webhelp/template/resources/images/Guidewire_mini_logo.jpg" alt="InsuranceSuite Configuration Upgrade Tools 3.1.0" /></a>
+                    <div class=" wh_publication_title "><a href="../index.html" title="InsuranceSuite Configuration Upgrade Tools 3.1.0 Home" aria-label="InsuranceSuite Configuration Upgrade Tools 3.1.0 Home">InsuranceSuite Configuration Upgrade Tools 3.1.0</a></div>
+                    
+                </div>
+                
+                <!-- The menu button for mobile devices is copied in the output only when the 'webhelp.show.top.menu' parameter is set to 'yes' -->
+                
+            </div>
+
+            <div class="wh_top_menu_and_indexterms_link collapse navbar-collapse" id="wh_top_menu_and_indexterms_link">
+                
+				
+                
+                
+            </div>
+			<!-- <div class="publicationDropDown">This Publication</div> -->
+			<div class=" wh_search_input "><form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" title="Search query" aria-label="Search query" required="required" /><button type="submit" class="wh_search_button" title="Search" aria-label="Search"><span>Search</span></button></div></form></div>
+			<!--<div id="userAccount">
+			<span>
+				<i class="fas fa-dharmachakra" id="bt_logIn"></i>
+			</span>
+            <!-\-<span id="accountInfo"></span>-\->            
+            <span class="dropdown" id="show_profile" style="display: none;">
+                <button class="dropdown-toggle" type="button" data-toggle="dropdown">
+                    <span class="fas fa-dharmachakra"></span></button>
+                <ul class="dropdown-menu">
+                    <li class="avatar_userName"></li>
+                    <li class="divider" id="divider-admin"></li>
+                    <li><a href="#" id="bt_editProfile">Edit</a></li>
+                    <li><a href="#" id="bt_logOff">Logout</a></li>
+                </ul>
+            </span>
+            
+            </div>-->
+			<!-- <div class="Login">
+				<span>
+				<i class="fas fa-dharmachakra" id="bt_logIn"></i>
+			</span></div> -->
+        </div>
+    </div>
+</header>
+        
+        <!--<whc:webhelp_search_input/>-->
+        
+        <div class="container-fluid">
+            <div class="row navbar navbar-fixed-top" id="affix2">
+                <nav class="wh_tools hidden-print">
+                    <span class="openNav" type="button" aria-expanded="true" title="Show Contents and Search" aria-label="Show contents and search"><i class="fas fa-bars"></i></span>
+                    <div data-tooltip-position="bottom" class=" wh_breadcrumb "><ol xmlns:html="http://www.w3.org/1999/xhtml" class="d-print-none"><li><span class="home"><a href="../index.html"><span>InsuranceSuite Configuration Upgrade Tools 3.1.0</span></a></span></li><li><span class="topicref"><span class="title"><a href="../topics/c_release-notes.html"><span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">InsuranceSuite Configuration Upgrade Tools</span></a></span></span></li><li><span class="topicref" data-id="c_aj1927726"><span class="title"><a href="../topics/c_upgrade-inspections-tool.html">Upgrade inspections tool</a></span></span></li><li class="active"><span class="topicref" data-id="upgrade-inspections-reference"><span class="title"><a href="../topics/r_upgrade-inspections-reference.html">Upgrade inspections reference</a></span></span></li></ol></div>
+                    <div class="wh_right_tools hidden-sm hidden-xs">
+                        <div class=" wh_navigation_links "><span id="topic_navigation_links_header" class="navheader">
+  
+<span class="navprev"><a class="link" href="../topics/r_upgrade-inspections-commands.html" title="Command line options for inspections" aria-label="Previous topic: Command line options for inspections" rel="prev"></a></span>  
+<span class="navnext"><a class="link" href="../topics/c_error-log-files.html" title="Error log files" aria-label="Next topic: Error log files" rel="next"></a></span>  </span></div>
+                        <button class="wh_hide_highlight" aria-label="Toggle search highlights" title="Toggle search highlights"></button>
+                        <!--<whc:webhelp_expand_collapse_sections/>-->
+                        <span class=" shareLink share "><a class="button fas fa-share-alt" data-sharer="email" data-title="" data-url="" data-subject="" data-to="" title="Share this page" aria-label="Share this page" href=""></a></span>
+                        <span class=" downloadPDF pdf "><a xmlns="" class="far fa-file-pdf" href="../pdf/InsuranceSuiteConfigurationUpgradeTools.pdf" title="Open Guide" aria-label="Open Guide" target="_blank"></a></span>
+                        <span class=" whPrintLink print "><button class="fas fa-print fa-1x" onClick="window.print()" title="Print this page" aria-label="Print this page"></button></span>
+                    </div>
+                </nav>
+            </div>
+            
+            <div class="wh_content_area">
+                <div class="row justify-content-lg-end">
+                    
+                        <nav role="navigation" id="wh_publication_toc" class="col-lg-3 col-md-3 col-sm-3 hidden-xs navbar hidden-print">
+                            <div class=" wh_publication_toc " data-tooltip-position="right" data-simplebar=""><div class="SearchNav"><form id="searchForm" method="get" role="search" action="../search.html"><div><input type="search" placeholder="Search " class="wh_search_textfield" id="textToSearch" name="searchQuery" aria-label="Search query" /><button type="submit" class="wh_search_button" aria-label="Search"><span>Search</span></button></div><script><!--
+											$(document).ready(function () {
+												$('#searchForm').submit(function (e) {
+													if ($('.wh_search_textfield').val().length < 1) {
+														e.preventDefault();
+													}
+												});
+											});
+										--></script></form><span class="closeNav fas fa-times"></span></div><ul role="tree" aria-label="Table of Contents"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem" aria-expanded="true"><span data-tocid="tocId-d49e193" class="topicref" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action tocId-d49e193-link" class="wh-expand-btn"></span><span class="title"><a href="../topics/c_release-notes.html" id="tocId-d49e193-link"><span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">InsuranceSuite Configuration Upgrade Tools</span></a></span></span><ul role="group" class="navbar-nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="release-notes-d49e380" class="topicref" data-id="release-notes" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../topics/c_release-notes.html" id="release-notes-d49e380-link">Release notes</a></span></span></li><li role="treeitem"><span data-tocid="xd_f2518dff06542463-3559e9f7-1686ebc1ea3--7f01-d49e388" class="topicref" data-id="xd_f2518dff06542463-3559e9f7-1686ebc1ea3--7f01" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../topics/c_overview-upgrade-tools.html" id="xd_f2518dff06542463-3559e9f7-1686ebc1ea3--7f01-d49e388-link">Overview of the <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">InsuranceSuite Configuration Upgrade Tools</span></a></span></span></li><li role="treeitem"><span data-tocid="xd_c7b14e0b4c46bdb8--1a57e44d-16785f2722d--7ff4-d49e398" class="topicref" data-id="xd_c7b14e0b4c46bdb8--1a57e44d-16785f2722d--7ff4" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../topics/c_how-upgrade-tools-work.html" id="xd_c7b14e0b4c46bdb8--1a57e44d-16785f2722d--7ff4-d49e398-link">How the <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">InsuranceSuite Configuration Upgrade Tools</span> work</a></span></span></li><li role="treeitem"><span data-tocid="xd_5aa56bb131da4909-2a869cc4-1661181dc22--7bf1-d49e409" class="topicref" data-id="xd_5aa56bb131da4909-2a869cc4-1661181dc22--7bf1" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../topics/c_handling-changes-during-upgrade.html" id="xd_5aa56bb131da4909-2a869cc4-1661181dc22--7bf1-d49e409-link">Handling changes to the configuration during an upgrade</a></span></span></li><li role="treeitem"><span data-tocid="xd_bb38eb49f78d6f40--5746b46d-16ac884f3be--7dda-d49e417" class="topicref" data-id="xd_bb38eb49f78d6f40--5746b46d-16ac884f3be--7dda" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../topics/t_download-install-upgrade-tools.html" id="xd_bb38eb49f78d6f40--5746b46d-16ac884f3be--7dda-d49e417-link">Download and install the <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">InsuranceSuite Configuration Upgrade Tools</span></a></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="xd_cf372fc26b43e86d-1b165a31-169921d1f3a--7ce2-d49e427" class="topicref" data-id="xd_cf372fc26b43e86d-1b165a31-169921d1f3a--7ce2" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action xd_cf372fc26b43e86d-1b165a31-169921d1f3a--7ce2-d49e427-link" class="wh-expand-btn"></span><span class="title"><a href="../topics/c_extend-upgrade-tools.html" id="xd_cf372fc26b43e86d-1b165a31-169921d1f3a--7ce2-d49e427-link">Extending the <span xmlns:toc="http://www.oxygenxml.com/ns/webhelp/toc" xmlns:xhtml="http://www.w3.org/1999/xhtml" class="keyword">InsuranceSuite Configuration Upgrade Tools</span></a></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="xd_0638eb9dcf93022f-7fa9a360-1648559bf13--7cdb-d49e469" class="topicref" data-id="xd_0638eb9dcf93022f-7fa9a360-1648559bf13--7cdb" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action xd_0638eb9dcf93022f-7fa9a360-1648559bf13--7cdb-d49e469-link" class="wh-expand-btn"></span><span class="title"><a href="../topics/c_preupgrade.html" id="xd_0638eb9dcf93022f-7fa9a360-1648559bf13--7cdb-d49e469-link">Preupgrade tool</a></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="xd_0638eb9dcf93022f-7fa9a360-1648559bf13--7cd3-d49e501" class="topicref" data-id="xd_0638eb9dcf93022f-7fa9a360-1648559bf13--7cd3" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action xd_0638eb9dcf93022f-7fa9a360-1648559bf13--7cd3-d49e501-link" class="wh-expand-btn"></span><span class="title"><a href="../topics/c_upgrade.html" id="xd_0638eb9dcf93022f-7fa9a360-1648559bf13--7cd3-d49e501-link">Upgrade tool</a></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="c_aj1930528-d49e1151" class="topicref" data-id="c_aj1930528" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action c_aj1930528-d49e1151-link" class="wh-expand-btn"></span><span class="title"><a href="../topics/c_merge-tracker-tool.html#c_aj1930528" id="c_aj1930528-d49e1151-link">Merge Tracker tool</a></span></span></li><li role="treeitem" aria-expanded="false"><span data-tocid="c_aj1926787-d49e1259" class="topicref" data-id="c_aj1926787" data-state="not-ready"><span role="button" tabindex="0" aria-labelledby="button-expand-action c_aj1926787-d49e1259-link" class="wh-expand-btn"></span><span class="title"><a href="../topics/c_smart-merge-smart-diff-tools.html#c_aj1926787" id="c_aj1926787-d49e1259-link">Smart Merge and Smart Diff tools</a></span></span></li><li role="treeitem" aria-expanded="true"><span data-tocid="c_aj1927726-d49e1315" class="topicref" data-id="c_aj1927726" data-state="expanded"><span role="button" tabindex="0" aria-labelledby="button-collapse-action c_aj1927726-d49e1315-link" class="wh-expand-btn"></span><span class="title"><a href="../topics/c_upgrade-inspections-tool.html" id="c_aj1927726-d49e1315-link">Upgrade inspections tool</a></span></span><ul role="group" class="navbar-nav nav-list"><span class="expand-button-action-labels"><span id="button-expand-action" aria-label="Expand"></span><span id="button-collapse-action" aria-label="Collapse"></span><span id="button-pending-action" aria-label="Pending"></span></span><li role="treeitem"><span data-tocid="xd_bb38eb49f78d6f40--5746b46d-16ac884f3be--7c79-d49e1323" class="topicref" data-id="xd_bb38eb49f78d6f40--5746b46d-16ac884f3be--7c79" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../topics/t_use-upgrade-inspections.html" id="xd_bb38eb49f78d6f40--5746b46d-16ac884f3be--7c79-d49e1323-link">Use upgrade inspections</a></span></span></li><li role="treeitem"><span data-tocid="xd_bb38eb49f78d6f40--5746b46d-16ac884f3be--7b7e-d49e1331" class="topicref" data-id="xd_bb38eb49f78d6f40--5746b46d-16ac884f3be--7b7e" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../topics/r_upgrade-inspections-commands.html" id="xd_bb38eb49f78d6f40--5746b46d-16ac884f3be--7b7e-d49e1331-link">Command line options for inspections</a></span></span></li><li role="treeitem" class="active"><span data-tocid="upgrade-inspections-reference-d49e1339" class="topicref" data-id="upgrade-inspections-reference" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../topics/r_upgrade-inspections-reference.html" id="upgrade-inspections-reference-d49e1339-link">Upgrade inspections reference</a></span></span></li></ul></li><li role="treeitem"><span data-tocid="xd_88692ccd77b0a96e--c1a9526-16231d1d963--7ea0-d49e1347" class="topicref" data-id="xd_88692ccd77b0a96e--c1a9526-16231d1d963--7ea0" data-state="leaf"><span role="button" class="wh-expand-btn"></span><span class="title"><a href="../topics/c_error-log-files.html" id="xd_88692ccd77b0a96e--c1a9526-16231d1d963--7ea0-d49e1347-link">Error log files</a></span></span></li></ul></li></ul></div>
+                        </nav>
+                        <div class="collapse-toc col-lg-1 col-md-1 col-sm-1 hidden-xs"><span class="collapse-toc-button" title="Hide contents" style="cursor: pointer;"></span></div>
+                    
+                    
+                    <div id="wh_topic_body" class="col-lg-6 col-md-9 col-sm-9 col-xs-12"><!-- /*DOCS-323 WebHelp Feedback - Adjust column widths*/-->
+                        <div class=" wh_topic_content body "><main role="main"><article role="article" aria-labelledby="ariaid-title1">
+    <h1 class="title topictitle1" id="ariaid-title1">Upgrade inspections reference</h1>
+    <div class="body refbody">
+        <section class="section" id="upgrade-inspections-reference__d22e16"><h2 class="title sectiontitle">Add missing reified keyword</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">AddMissingReifiedKeyword</code></p>
+            <p class="p">Gosu requires the <code class="ph codeph">reified</code> keyword as a modifier on generic functions
+                that are equivalent to parameterized Java functions that have type erasure. This
+                inspection allows you to add the <code class="ph codeph">reified</code> modifier automatically to
+                functions that require it.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e36"><h2 class="title sectiontitle">Convert Gosu interfaces to Gosu structures</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">EntityInterface</code></p>
+            <p class="p">This inspection finds Gosu interfaces used by
+                    <code class="ph codeph">entity.implementsInterface</code> and converts them to Gosu structures
+                because Gosu interfaces are not supported by
+                    <code class="ph codeph">entity.implementsInterface</code>.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e56"><h2 class="title sectiontitle">Find customer files copied to the new customized configuration and then removed
+                from the tmp directory</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">DisplayRemovedCustomerFiles</code></p>
+            <div class="p">This inspection finds files that were added by the customer, copied into the new
+                customized configuration and then removed from the <span class="ph filepath">tmp</span>
+                directory. It may be useful in a situation where the configuration upgrade is
+                already in progress and you need to run the upgrade steps again because some files
+                were removed, moved, or renamed in the customized configuration. <div class="note note note_note"><span class="note__title_x">Note:</span> The
+                    inspection works only if the <span class="ph uicontrol">Unresolve file when changes in upgraded
+                        customized configuration are detected</span> option is enabled in Merge
+                    Tracker settings before you run the upgrade steps again.</div></div>
+            <div class="p">An example usage scenario: <ol class="ol">
+                    <li class="li">You add a file, <span class="ph filepath">CustomWidgets.pcf</span>, to the customized
+                        configuration.</li>
+                    <li class="li">You run upgrade steps. A temporary directory is created.</li>
+                    <li class="li">You launch Merge Tracker and then copy
+                            <span class="ph filepath">CustomWidgets.pcf</span> to the new customized
+                        configuration.</li>
+                    <li class="li">You remove <span class="ph filepath">CustomWidgets.pcf</span> from the customized
+                        configuration.</li>
+                    <li class="li">You run the upgrade steps again overwriting the temporary directory. The
+                        directory does not contain CustomWidgets.pcf any more but the file is still
+                        in the new customized configuration. </li>
+                    <li class="li">You go back to Merge Tracker and run the <span class="ph uicontrol">Find files added and
+                            then removed by the customer</span> inspection to identify files
+                        that you need to remove from the new customized configuration. </li>
+                </ol></div>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e114"><h2 class="title sectiontitle">Find modified locked files</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">LockedFiles</code></p>
+            <p class="p">Some configuration files are marked as locked by Guidewire. Modifications to locked
+                files are not supported. This inspection finds locked files that have been modified,
+                so they can be reviewed and corrected.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e128"><h2 class="title sectiontitle">Fix final and static methods</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">RemoveFinalFromStaticGosuMethodDef</code></p>
+            <p class="p">Methods with <code class="ph codeph">final</code> and <code class="ph codeph">static</code> are invalid in Gosu.
+                This inspection finds these methods and removes the <code class="ph codeph">final</code>
+                keyword.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e152"><h2 class="title sectiontitle">Fix monetary expressions compared to zero</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">MonetaryAmountComparedToZero</code></p>
+            <p class="p">Types such as <code class="ph codeph">MonetaryAmount</code> and <code class="ph codeph">CurrencyAmount</code>
+                have been added to Guidewire products to improve type safety of multicurrency
+                features. Existing code that compares monetary values to unitless numbers must be
+                reviewed and updated to take currency into account. This inspection fixes any cases
+                where a monetary value is compared with a literal zero value, because the currency
+                is irrelevant for the special case of comparing to zero. Comparisons with non-zero
+                numeric values must be corrected manually.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e172"><h2 class="title sectiontitle">Fix non-phone values without the GW or GWU prefix in the GWPhoneNumber
+                context</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">PhoneToGwPhone</code></p>
+            <div class="p">This inspection finds non-phone values without the <code class="ph codeph">GW</code> or
+                    <code class="ph codeph">GWU</code> prefix that are used in the <code class="ph codeph">GWPhoneNumber</code>
+                context and allows you to: <ul class="ul">
+                    <li class="li">Add the missing prefix if the source or destination is an entity column of
+                        the <code class="ph codeph">phone</code> type</li>
+                    <li class="li">Wrap the value in the
+                            <code class="ph codeph">gw.api.phone.upgrade.PhoneParser.exParsePhone</code> function
+                        if the source is a value of the <code class="ph codeph">String</code> type</li>
+                </ul>
+</div>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e212"><h2 class="title sectiontitle">Fix renamed Gosu classes, methods, and field names</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">GenericApiDiffGosu</code></p>
+            <p class="p">This inspection finds and fixes renamed Gosu classes, methods, and field names. The
+                inspection applies only to Gosu files. The complete list of renamed classes,
+                methods, and field names updated by this inspection is specific to the version you
+                are upgrading from and is based on the changes listed in the upgrade diff report. To
+                obtain your custom Upgrade Diff Report, visit the Guidewire Community.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e226"><h2 class="title sectiontitle">Fix the phone-type column without the Value suffix in the String context</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">PhoneToString</code></p>
+            <p class="p">This inspection finds columns of the <code class="ph codeph">phone</code> type without the
+                    <code class="ph codeph">Value</code> suffix that are used in the <code class="ph codeph">String</code>
+                context and allows you to add the missing suffix.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e249"><h2 class="title sectiontitle">Inform about moved methods</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">InformAboutMovedMethods</code></p>
+            <p class="p">This inspection finds changed and moved methods and informs you where you need to
+                move their customized logic. For example, the inspection finds the
+                    <code class="ph codeph">IAccount.getShouldHoldAutomaticDisbursement(entity.Account)</code>
+                method and informs you that you need to move the logic from this old method to the
+                    <code class="ph codeph">AutomaticDisbursement.shouldHold</code> method.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e269"><h2 class="title sectiontitle">Remove Gosu rule files not listed in order.txt</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">UnreachableRules</code></p>
+            <p class="p">Gosu rules that exist in the file system but do not appear in corresponding
+                    <span class="ph filepath">order.txt</span> files are not visible in Guidewire Studio. This
+                inspection finds and removes such rules.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e287"><h2 class="title sectiontitle">Remove redundant conversion between String and TypeKey</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">StringTypekeyConversion</code></p>
+            <p class="p">This inspection finds and removes redundant conversions between
+                    <code class="ph codeph">String</code> and <code class="ph codeph">TypeKey</code> and replaces them with
+                static <code class="ph codeph">TypeKey</code> references.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e310"><h2 class="title sectiontitle">Remove the ProxyClass property</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">ProxyClassProperty</code></p>
+            <p class="p">The Gosu <code class="ph codeph">ProxyClass</code> property has been eliminated because Gosu
+                classes can now be coerced directly to <code class="ph codeph">java.lang.Class</code>. This
+                inspection finds and removes usages of the <code class="ph codeph">ProxyClass</code> property.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e333"><h2 class="title sectiontitle">Replace Type properties used to access metatype properties and methods</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">EntityTypePropertiesAccess</code></p>
+            <p class="p">This inspection finds <code class="ph codeph">Type</code> properties that are used to access entity
+                and typelist metatype properties, and replaces them with <code class="ph codeph">TYPE</code>
+                references.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e353"><h2 class="title sectiontitle">Replace XSD typeloader API</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">XsdTypeloaderApi</code></p>
+            <p class="p">This inspection finds usages of the old XSD typeloader API and replaces them with
+                equivalent references to classes generated by the new XML code generator.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e367"><h2 class="title sectiontitle">Replace calls to Gosu getter and setter methods with Gosu properties</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">ReplaceGetterAndSetterMethodsWithPropertySyntax</code></p>
+            <p class="p">This inspection finds and replaces calls to Gosu getter and setter methods with Gosu
+                properties. For example,
+                    <code class="ph codeph">gw.transaction.TransferFundsReversalWizardContext.setTransferFundTransaction(param)</code>
+                is converted to <code class="ph codeph">wizardContext.TransferFundTransaction = param</code>.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e387"><h2 class="title sectiontitle">Replace obsolete date/time types</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">XsdDateTime</code></p>
+            <p class="p">Date/time types from the <code class="ph codeph">gw.xml.xsd.types</code> package have been replaced
+                by types from the <code class="ph codeph">gw.xml.date</code> package. This inspection finds usages
+                of the obsolete date/time types from the <code class="ph codeph">gw.xml.xsd.types</code> package
+                and replaces them with corresponding types from the <code class="ph codeph">gw.xml.date</code>
+                package.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e414"><h2 class="title sectiontitle">Replace productmodel.XxxTypeValue types with generic types</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">ProductModelTypeValue</code></p>
+            <p class="p">This inspection finds usages of obsolete <code class="ph codeph">productmodel.XxxTypeValue</code>
+                types and replaces them with generic types.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e431"><h2 class="title sectiontitle">Restore deleted display keys used in the previous release</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">DeletedDisplayKeys</code></p>
+            <p class="p">This inspection finds display key references in the Gosu code, such as
+                    <code class="ph codeph">DisplayKey.get("..."))</code>, that correspond to display keys deleted
+                by Guidewire in the latest release. The inspection restores the display key values
+                from the previous release.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e448"><h2 class="title sectiontitle">Update PCF widgets missing type information</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">MissingPcfTypes</code></p>
+            <p class="p">This inspection finds input and cell elements in PCF files that are missing the
+                    <code class="ph codeph">valueType</code> attribute. If the inspection can determine the data
+                type stored by the element, it changes the element to a more strongly-typed version.
+                For example, if a <code class="ph codeph">Cell</code> element stores data of the
+                    <code class="ph codeph">String</code> type, the inspection changes the element type to
+                    <code class="ph codeph">TextCell</code>. The inspection also adds the
+                    <code class="ph codeph">valueType</code> attribute if the element type does not match the data
+                type. For example, if a <code class="ph codeph">Cell</code> element stores data of the
+                    <code class="ph codeph">Integer</code> type, the inspection changes the element type to
+                    <code class="ph codeph">TextCell</code> and adds the
+                    <code class="ph codeph">valueType="java.lang.Integer"</code>. If the inspection cannot
+                determine the data type, you need to change the element type manually. If the data
+                type is <code class="ph codeph">dynamic.Dynamic</code>, the inspection does not add the
+                    <code class="ph codeph">valueType</code> attribute to the element.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e496"><h2 class="title sectiontitle">Use denormalized policyPeriod.TaxAndSurchargesRPT</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">UseTaxAndSurchargesRPT</code></p>
+            <p class="p">This inspection finds usages of
+                    <code class="ph codeph">policyPeriod.allCosts.taxSurcharges.amountSum(policyPeriod.preferredSettlementCurrency)</code>
+                in PCF files and replaces them with the denormalized
+                    <code class="ph codeph">policyPeriod.TaxAndSurchargestRPT</code> for better performance.</p>
+        </section>
+        <section class="section" id="upgrade-inspections-reference__d22e516"><h2 class="title sectiontitle">Use gw.pl.persistence.core.Bundle</h2>
+            
+            <p class="p">Inspection ID: <code class="ph codeph">TransactionBundle</code></p>
+            <p class="p">The <code class="ph codeph">gw.transaction.Bundle</code> type has been replaced by
+                    <code class="ph codeph">gw.pl.persistence.core.Bundle</code>. This inspection finds references
+                to <code class="ph codeph">gw.transaction.Bundle</code> and replaces them with references to
+                    <code class="ph codeph">gw.pl.persistence.core.Bundle</code>.</p>
+        </section>
+
+    </div>
+</article></main></div>
+                        
+                        
+                        
+                    </div>
+                    
+                        <nav role="navigation" id="wh_topic_toc" class="col-lg-2 hidden-sm hidden-xs navbar hidden-print"> <!-- /*DOCS-323 WebHelp Feedback - Adjust column widths*/-->
+                            <div class=" wh_topic_toc " data-simplebar=""><div class="wh_topic_label">On this page</div><ul class="gw_topic_toc_list"><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e16" data-tocid="upgrade-inspections-reference__d22e16">Add missing reified keyword</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e36" data-tocid="upgrade-inspections-reference__d22e36">Convert Gosu interfaces to Gosu structures</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e56" data-tocid="upgrade-inspections-reference__d22e56">Find customer files copied to the new customized configuration and then removed
+                from the tmp directory</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e114" data-tocid="upgrade-inspections-reference__d22e114">Find modified locked files</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e128" data-tocid="upgrade-inspections-reference__d22e128">Fix final and static methods</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e152" data-tocid="upgrade-inspections-reference__d22e152">Fix monetary expressions compared to zero</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e172" data-tocid="upgrade-inspections-reference__d22e172">Fix non-phone values without the GW or GWU prefix in the GWPhoneNumber
+                context</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e212" data-tocid="upgrade-inspections-reference__d22e212">Fix renamed Gosu classes, methods, and field names</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e226" data-tocid="upgrade-inspections-reference__d22e226">Fix the phone-type column without the Value suffix in the String context</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e249" data-tocid="upgrade-inspections-reference__d22e249">Inform about moved methods</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e269" data-tocid="upgrade-inspections-reference__d22e269">Remove Gosu rule files not listed in order.txt</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e287" data-tocid="upgrade-inspections-reference__d22e287">Remove redundant conversion between String and TypeKey</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e310" data-tocid="upgrade-inspections-reference__d22e310">Remove the ProxyClass property</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e333" data-tocid="upgrade-inspections-reference__d22e333">Replace Type properties used to access metatype properties and methods</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e353" data-tocid="upgrade-inspections-reference__d22e353">Replace XSD typeloader API</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e367" data-tocid="upgrade-inspections-reference__d22e367">Replace calls to Gosu getter and setter methods with Gosu properties</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e387" data-tocid="upgrade-inspections-reference__d22e387">Replace obsolete date/time types</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e414" data-tocid="upgrade-inspections-reference__d22e414">Replace productmodel.XxxTypeValue types with generic types</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e431" data-tocid="upgrade-inspections-reference__d22e431">Restore deleted display keys used in the previous release</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e448" data-tocid="upgrade-inspections-reference__d22e448">Update PCF widgets missing type information</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e496" data-tocid="upgrade-inspections-reference__d22e496">Use denormalized policyPeriod.TaxAndSurchargesRPT</a></div></li><li class="section-item"><div class="section-title"><a href="#upgrade-inspections-reference__d22e516" data-tocid="upgrade-inspections-reference__d22e516">Use gw.pl.persistence.core.Bundle</a></div></li></ul></div>
+                        </nav>
+                    
+                </div>
+            </div>
+        </div> 
+        <nav class="navbar navbar-default wh_footer navbar-bottom">
+  <div class=" footer-container text-center ">
+    <p><span class="footercopyright">©
+                        2020
+                        Guidewire Software, Inc.
+                    </span><span class="footerLink"><a href="https://www.guidewire.com/legal-notices" target="_blank">Legal notice</a></span></p>
+  </div>
+  
+</nav>
+        
+        <div id="go2top">
+            <span class="glyphicon glyphicon-chevron-up"></span>
+        </div>
+        
+        <!-- The modal container for images -->
+        <div id="modal_img_large" class="modal">
+            <span class="close glyphicon glyphicon-remove"></span>
+            <!-- Modal Content (The Image) -->
+            <img class="modal-content" id="modal-img" />
+            <!-- Modal Caption (Image Text) -->
+            <div id="caption"></div>
+        </div>
+        
+        <!-- <script src="${oxygen-webhelp-assets-dir}/lib/bootstrap/js/bootstrap.min.js" type="text/javascript"></script> -->
+        
+    </body>
+</html>

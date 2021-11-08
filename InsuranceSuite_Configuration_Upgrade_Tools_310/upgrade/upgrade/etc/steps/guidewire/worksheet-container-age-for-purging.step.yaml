@@ -1,0 +1,8 @@
+description: >
+  Rename parameter 'WorksheetContainerAgeForPurging' to 'RatingWorksheetContainerAgeForPurging' in config.xml.
+product: PC
+targetVersion: 9.0.0
+fileSets:
+  - .*/config/config.xml
+transformations:
+  - [setAttribute, "/*/*:param[@name = 'WorksheetContainerAgeForPurging']", name, "'RatingWorksheetContainerAgeForPurging'"]

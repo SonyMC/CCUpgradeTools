@@ -1,0 +1,7 @@
+description: Replace 'com.guidewire.pl.web.navigation' package references with 'pcf.api' package references.
+targetVersion: 9.0.0
+fileSets:
+  - PCFS
+  - GOSU
+transformations:
+- [replaceAll, "com\\.guidewire\\.pl\\.web\\.navigation\\.", "pcf.api."]

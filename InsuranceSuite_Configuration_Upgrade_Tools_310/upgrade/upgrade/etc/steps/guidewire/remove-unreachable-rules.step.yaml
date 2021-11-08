@@ -1,0 +1,7 @@
+class: com.guidewire.upgrade.steps.ferrite.pl.RemoveUnreachableRulesUpgradeStep
+description: >
+  Remove Gosu rules that are not listed in corresponding order.txt files.
+  By default, this step is disabled.
+  To run it, use the upgrade command with the --enable-step RemoveUnreachableRules option.
+targetVersion: 9.0.0
+enabled: false
